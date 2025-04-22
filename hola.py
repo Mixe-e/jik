@@ -56,7 +56,7 @@
 
 # # Ejercicio Para
 
-def traesh function
-print(traesh(input("ingrese la cantidad de veces que quiere repetir el ciclo")))
-print("ingrese un numero")
-for i in range(traesh):print(i*int(input("numero")))
+for i in range(3):
+    print("Esta es la table del ", i)
+    for j in range(1,10):
+        print(i, "*", j, "=", i*j)
