@@ -38,13 +38,25 @@
 
 ## Edad ingresar 
 
-edad=int(input("ingrese su edad"))
-if edad>=18:
-    print("usted es mayor de edad")
+# edad=int(input("ingrese su edad"))
+# if edad>=18:
+    # print("usted es mayor de edad")
 
-elif edad>=12 and edad=<18:
-    print("Usted es adolescente")
-elif edad>=18 and edad=<65:
-    print("Usted es un adulto")
-else edad>65
-    print("Usted es un viejo")
+# elif edad>=12 and edad=<18:
+    # print("Usted es adolescente")
+# elif edad>=18 and edad=<65:
+    # print("Usted es un adulto")
+# else edad>65
+    # print("Usted es un viejo")
+
+
+
+
+
+
+# # Ejercicio Para
+
+def traesh function
+print(traesh(input("ingrese la cantidad de veces que quiere repetir el ciclo")))
+print("ingrese un numero")
+for i in range(traesh):print(i*int(input("numero")))
