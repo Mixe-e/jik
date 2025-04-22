@@ -53,10 +53,41 @@
 
 
 
+# # Inicio de tabla de multiplicar
 
-# # Ejercicio Para
+# cant=int(input("ingrese la cantidad de repeticiones "))
+# for i in range(cant):
+    # print("Esta es la table del ", i)
+    # for j in range(1,10):
+        # print(i, "*", j, "=", i*j)
 
-for i in range(3):
-    print("Esta es la table del ", i)
-    for j in range(1,10):
-        print(i, "*", j, "=", i*j)
+
+# # Fin Para
+
+# nombre=input("ingrese su nombre")
+# edad=input("ingrese su edad")
+# print("hola", nombre, "su edad es", edad)
+
+
+# num=int(input("ingrese un numero"))
+
+# # Sacar promedio definido por el usuario
+
+cant=int(input("ingrese la cantidad de notas"))
+total=0
+notasazules=0
+for i in range(cant):
+    print("ingrese la nota", i+1)
+    nota=float(input(""))
+    total=total+nota
+    if nota>=4:
+        notasazules=notasazules+1
+promedio=total/cant
+print("el promedio es", promedio)
+print("la cantidad de notas azules son:", notasazules)
+if promedio>=4:
+    print("el alumno aprobo")
+else:
+    print("el alumno reprobo")
+        
+
