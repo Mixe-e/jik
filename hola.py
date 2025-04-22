@@ -73,21 +73,36 @@
 
 # # Sacar promedio definido por el usuario
 
-cant=int(input("ingrese la cantidad de notas"))
-total=0
-notasazules=0
-for i in range(cant):
-    print("ingrese la nota", i+1)
-    nota=float(input(""))
-    total=total+nota
-    if nota>=4:
-        notasazules=notasazules+1
-promedio=total/cant
-print("el promedio es", promedio)
-print("la cantidad de notas azules son:", notasazules)
-if promedio>=4:
-    print("el alumno aprobo")
-else:
-    print("el alumno reprobo")
-        
+#cant=int(input("ingrese la cantidad de notas"))
+#total=0
+#notasazules=0
+#for i in range(cant):
+#    print("ingrese la nota", i+1)
+#    nota=float(input(""))
+#    total=total+nota
+#    if nota>=4:
+#        notasazules=notasazules+1
+#promedio=total/cant
+#print("el promedio es", promedio)
+#print("la cantidad de notas azules son:", notasazules)
+#if promedio>=4:
+#    print("el alumno aprobo")
+#else:
+#    print("el alumno reprobo")
+
+
+## Clave
+
+clave=1234
+y=3
+for i in range(3):
+    pas=int(input("ingrese la clave"))
+    
+    if clave==pas:
+            print("blenvenido al sistema")
+            break
+    else:
+        y=y-1
+        print("clave incorrecta, quedan", y , "intentos")
+
 
