@@ -50,15 +50,11 @@
 
 ##---------------------------------------------------------
 
-resp="N/A"
-contra=0
+clave=323
+intentos=3
+contraseña=int(input("ingrese contraseña"))
 
-while resp!="123":
-    resp=input("Ingrese la contraseña")
-    contra=contra+1
-    print("Intentos disponibles: ", contra) 
-    if contra>=3:
-        print("contraseña incorrecta, saliendo del sistema")
-        break
-
+while clave!=contraseña :
+    print("error contraseña invalida")
+    print("Quedan", intentos, "intentos")
 
