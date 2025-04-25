@@ -108,6 +108,7 @@
  # Equivalent of "según" (according to) in PSeInt using if-elif-else in Python
 
 
+
 total = 0
 palta=3000
 tomate=2000
