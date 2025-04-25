@@ -34,9 +34,31 @@
 
 ##---------------------------------------------------------
 
-num=10
-import time
-while num<=0:
-    print(num)
-    time.sleep(1)
-    num-=1
+# num=0
+# import time
+# while num<=30:
+#     print(num)
+#     time.sleep(1)
+#     num+=1
+
+##---------------------------------------------------------
+
+# resp="no"
+
+# while resp!="si":
+#     resp=input("Desea salirse del programa?")
+
+##---------------------------------------------------------
+
+resp="N/A"
+contra=0
+
+while resp!="123":
+    resp=input("Ingrese la contraseña")
+    contra=contra+1
+    print("Intentos disponibles: ", contra) 
+    if contra>=3:
+        print("contraseña incorrecta, saliendo del sistema")
+        break
+
+
