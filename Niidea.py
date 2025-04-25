@@ -25,10 +25,18 @@
 ##---------------------------------------------------------
 
 
-palabra=input("Escribe algo: ")
-caract=0
-for i in palabra:
-    caract=caract+1
-print("La palabra tiene", caract, "caracteres")
+# palabra=input("Escribe algo: ")
+# caract=0
+# for i in palabra:
+#     caract=caract+1
+# print("La palabra tiene", caract, "caracteres")
 
 
+##---------------------------------------------------------
+
+num=10
+import time
+while num<=0:
+    print(num)
+    time.sleep(1)
+    num-=1
