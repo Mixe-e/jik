@@ -1,4 +1,3 @@
-
 # kanye=0
 # trump=0
 # while True:
@@ -36,9 +35,9 @@
 
 # num=0
 # import time
-# while num<=30:
+# while num<=3123214151512510:
 #     print(num)
-#     time.sleep(1)
+#     time.sleep(0)
 #     num+=1
 
 ##---------------------------------------------------------
@@ -48,13 +47,20 @@
 # while resp!="si":
 #     resp=input("Desea salirse del programa?")
 
-##---------------------------------------------------------
+##--clave--------------------------------------------------
 
-clave=323
+clave=3239
 intentos=3
 contraseña=int(input("ingrese contraseña"))
 
 while clave!=contraseña :
     print("error contraseña invalida")
     print("Quedan", intentos, "intentos")
+    contraseña=int(input("ingrese contraseña"))
+    if intentos==1:
+        break
 
+if clave==contraseña:
+    print(" Clave aceptada")
+else:
+    print("acceso denegado")
