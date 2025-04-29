@@ -49,19 +49,54 @@
 
 ##--clave--------------------------------------------------
 
-clave=3239
-intentos=3
-contraseña=int(input("ingrese contraseña"))
+# clave=3239
+# intentos=3
+# contraseña=int(input("ingrese contraseña"))
 
-while clave!=contraseña :
-    print("error contraseña invalida")
-    print("Quedan", intentos, "intentos")
-    contraseña=int(input("ingrese contraseña"))
-    if intentos==1:
-        break
+# while clave!=contraseña :
+#     print("error contraseña invalida")
+#     print("Quedan", intentos, "intentos")
+#     contraseña=int(input("ingrese contraseña"))
+#     if intentos==1:
+#         break
 
-if clave==contraseña:
-    print(" Clave aceptada")
-else:
-    print("acceso denegado")
+# if clave==contraseña:
+#     print(" Clave aceptada")
+# else:
+#     print("acceso denegado")
+
+##------------------------------------------------------------
+
+
+# numero=(int(input("Ingrese un numero")))
+# if numero % 2 == 0:
+#     print("El numero es par")
+# else:
+#     print("El numero es impar")
+
+
+
+##------------------------------------------------------------
+
+uet="s"
+total=0
+total2=0
+
+print("Nota: escriba el ", uet, " para salir" )
+numero2=(int(input("Contador de numeros")))
+while numero2!= uet:   
+        numero2=(int(input("agrega otro numero, escribe ", uet, " para salir")))
+        total2=total2+1
+        total=total+numero2
+        if uet == "s":
+            break
+
+print("La suma total es:", total)
+print("Tus numeros ingresados fueron", total2)
+
+
+
+
+
+
 

@@ -4,23 +4,28 @@ print(randy)
 street=50
 street2=50
 a=0
+Jugador1=(int(input("Coloca tu nombre")))
+Jugador2=(int(input("Coloca tu nombre")))
 while street>1 and street2>0:
     if a % 2 == 0:
-            print("Ejecutar golpe")
+            print("Ejecutar golpe de street fighter", Jugador1 )
             a=a+1
             randy=random.randint(2,10)
             street=street-randy
             print("Tu golpe hizo", randy)
             print("--------------------")
-            print("Vida de street fighter 1: ", street)
+            print("Vida de street fighter:", Jugador1) 
+            print("Vida de street fighter 2: ", Jugador2)
     else:
-            print("Ejecutar golpe2")
+            print("Ejecutar golpe de street fighter", Jugador2 )
             a=a+1
             randy=random.randint(2,10)
             street2=street2-randy
             print("Tu golpe hizo", randy)
             print("--------------------")
-            print("Vida de street fighter 2: ", street2)
+            print("Vida de street fighter:", Jugador1)
+            print("Vida de street fighter 2: ", Jugador2)
+
 
 
 if street<1:
