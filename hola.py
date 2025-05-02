@@ -71,27 +71,28 @@
 
 # num=int(input("ingrese un numero"))
 
+##--------------------------------------------------------------------
 # # Sacar promedio definido por el usuario
 
-#cant=int(input("ingrese la cantidad de notas"))
-#total=0
-#notasazules=0
-#for i in range(cant):
+# cant=int(input("ingrese la cantidad de notas"))
+# total=0
+# notasazules=0
+# for i in range(cant):
 #    print("ingrese la nota", i+1)
 #    nota=float(input(""))
 #    total=total+nota
 #    if nota>=4:
 #        notasazules=notasazules+1
-#promedio=total/cant
-#print("el promedio es", promedio)
-#print("la cantidad de notas azules son:", notasazules)
-#if promedio>=4:
+# promedio=total/cant
+# print("el promedio es", promedio)
+# print("la cantidad de notas azules son:", notasazules)
+# if promedio>=4:
 #    print("el alumno aprobo")
-#else:
+# else:
 #    print("el alumno reprobo")
 
-
-## Clave wegfweg
+##--------------------------------------------------------------------
+## Clave1234
 
 # clave=1234
 # y=3
@@ -105,52 +106,79 @@
 #         y=y-1
 #         print("clave incorrecta, quedan", y , "intentos")
 
- # Equivalent of "según" (according to) in PSeInt using if-elif-else in Python
+
+##--------------------------------------------------------------------
+
+# total = 0
+# palta=3000
+# tomate=2000
+# naranja=1500
+# pera=300
+# Ak47=100000
+
+# while True:
+#     print("1. Palta")
+#     print("2. Tomate")
+#     print("3. Naranja")
+#     print("4. Pera")
+#     print("5. Ak-47")
+#     print("6. Salir")
+#     opcion = int(input("Ingrese una opción (1-5): "))
+
+#     if opcion == 1:
+#         print("Llevaste 1 palta")
+#         total=total+palta
+#     elif opcion == 2:
+#         print("Llevaste 1 tomate")
+#         total=total+tomate
+#     elif opcion == 3:
+#         print("Llevaste 1 naranja")
+#         total=total+naranja
+#     elif opcion == 4:
+#         print("Llevaste 1 pera")
+#         total=total+pera
+#     elif opcion == 5:
+#         print("Llevaste 1 Ak-47")
+#         total=total+Ak47
+#     elif opcion == 6:
+#         break
+#     else:
+#         print("Opción no válida")
+#     opcion = int(input("Ingrese una opción (1-6): "))
 
 
+# print("total de palta:", palta)
+# print("total de tomate:", tomate)
+# print("total de naranja:", naranja)
+# print("total de pera:", pera)
+# print("total de Ak-47:", Ak47)
+# print("El total es:", total)
+# print("Gracias por su compra")
 
-total = 0
-palta=3000
-tomate=2000
-naranja=1500
-pera=300
-Ak47=100000
 
-while True:
-    print("1. Palta")
-    print("2. Tomate")
-    print("3. Naranja")
-    print("4. Pera")
-    print("5. Ak-47")
-    print("6. Salir")
-    opcion = int(input("Ingrese una opción (1-5): "))
+##---------------------------------------------------------
 
-    if opcion == 1:
-        print("Llevaste 1 palta")
-        total=total+palta
-    elif opcion == 2:
-        print("Llevaste 1 tomate")
-        total=total+tomate
-    elif opcion == 3:
-        print("Llevaste 1 naranja")
-        total=total+naranja
-    elif opcion == 4:
-        print("Llevaste 1 pera")
-        total=total+pera
-    elif opcion == 5:
-        print("Llevaste 1 Ak-47")
-        total=total+Ak47
-    elif opcion == 6:
+import random
+
+numAzar=random.randint(1,50)
+adivinar= int(print("Adivina el numero"))
+
+while adivinar!=numAzar:
+
+    if adivinar>numAzar:
+        print("El numero es menor")
+        print(numAzar)
+
+    if adivinar<numAzar:
+        print("El numero es mayor")
+        print(numAzar)
+
+    if adivinar==numAzar:
+        print("Adivinaste")
         break
-    else:
-        print("Opción no válida")
-    opcion = int(input("Ingrese una opción (1-6): "))
 
 
-print("total de palta:", palta)
-print("total de tomate:", tomate)
-print("total de naranja:", naranja)
-print("total de pera:", pera)
-print("total de Ak-47:", Ak47)
-print("El total es:", total)
-print("Gracias por su compra")
+
+
+
+
