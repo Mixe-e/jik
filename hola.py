@@ -199,44 +199,44 @@ import random
 #         break
 
 ##------------------------------------------------------------
-import random
-import time
+# import random
+# import time
 
-j1=0
-j2=0
-meta=30
-kik=0
+# j1=0
+# j2=0
+# meta=30
+# kik=0
 
-Jugador1=(input("Ingresa nombre del jugador 1"))
-time.sleep(1)
-Jugador2=(input("Ingresa nombre del jugador 2"))
+# Jugador1=(input("Ingresa nombre del jugador 1"))
+# time.sleep(1)
+# Jugador2=(input("Ingresa nombre del jugador 2"))
 
-while meta!=6999:
-    kik=kik+1
+# while meta!=6999:
+#     kik=kik+1
 
-    if kik % 2 == 0:
-        print("turno de:", Jugador1)
-        time.sleep(1)
-        numazar=random.randint(1,7)
-        j1=j1+numazar
-        print(Jugador1, " tiro el dado y salio:", numazar)
-        print(Jugador1, j1)
-        time.sleep(1)
-        if j1>=30:
-            print(Jugador1, " gano")
-            break
+#     if kik % 2 == 0:
+#         print("turno de:", Jugador1)
+#         time.sleep(1)
+#         numazar=random.randint(1,7)
+#         j1=j1+numazar
+#         print(Jugador1, " tiro el dado y salio:", numazar)
+#         print(Jugador1, j1)
+#         time.sleep(1)
+#         if j1>=30:
+#             print(Jugador1, " gano")
+#             break
       
-    else:
-        print("turno de:", Jugador2)
-        time.sleep(1)
-        numazar=random.randint(1,7)
-        j2=j2+numazar
-        print(Jugador2, "tiro el dado y salio:", numazar)
-        print(Jugador2, j2)
-        time.sleep(1)
-        if j2>=30:
-            print(Jugador2, " gano")
-            break
+#     else:
+#         print("turno de:", Jugador2)
+#         time.sleep(1)
+#         numazar=random.randint(1,7)
+#         j2=j2+numazar
+#         print(Jugador2, "tiro el dado y salio:", numazar)
+#         print(Jugador2, j2)
+#         time.sleep(1)
+#         if j2>=30:
+#             print(Jugador2, " gano")
+#             break
 
 ##--------------------------------------------------------
 
@@ -343,4 +343,57 @@ while meta!=6999:
 #     else:
 #         print("Ingrese un numero valido")
 #         decision=int(input("1. Si | 2. No"))
+
+##-----------------------------------------------------------
+
+print("Bienvenido al supermercado")
+kik="tilinsin"
+categorias=(int(input("Seleccione categoria")))
+
+while categorias!=kik:
+    print("""
+        1. Energeticas  
+        2. Gatitos 
+        3. Galletas          
+          """)
+
+    if categorias==1:
+    
+        print("Seleccione producto")
+        print("""     
+            1. Energetica morada
+            2. Energetica azul   
+            """)
+        energetica=(int(input))
+        if energetica==1:
+            energeticamorada=energeticamorada+1
+        if energetica==2:
+            energeticaazul=energeticaazul+1
+
+    if categorias==2:
+        print("Seleccione producto")
+        print("""     
+            1. Gatito azul
+            2. Gatito naranja   
+            """)
+        gatito=(int(input))
+        if gatito==1:
+            gatitoazul=gatitoazul+1
+        if gatito==2:
+            gatitonaranja=gatitonaranja+1
+
+    if categorias==3:
+        print("Seleccione producto")
+        print("""     
+            1. Serranita
+            2. carioca   
+            """)
+        galleta=(int(input))
+        if galleta==1:
+            serranita=serranita+1
+        if galleta==2:
+            carioca=carioca+1
+
+       
+
 
