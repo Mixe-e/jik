@@ -199,39 +199,44 @@ import random
 #         break
 
 ##------------------------------------------------------------
-# import random
-# import time
+import random
+import time
 
-# j1=0
-# j2=0
-# meta=30
-# kik=0
-# while meta!=6999:
-#     kik=kik+1
+j1=0
+j2=0
+meta=30
+kik=0
 
-#     if kik % 2 == 0:
-#         print("turno de j1")
-#         time.sleep(1)
-#         numazar=random.randint(1,7)
-#         j1=j1+numazar
-#         print("J1 tiro el dado y salio:", numazar)
-#         print("J1", j1)
-#         time.sleep(1)
-#         if j1>=30:
-#             print("j1 gano")
-#             break
+Jugador1=(input("Ingresa nombre del jugador 1"))
+time.sleep(1)
+Jugador2=(input("Ingresa nombre del jugador 2"))
+
+while meta!=6999:
+    kik=kik+1
+
+    if kik % 2 == 0:
+        print("turno de:", Jugador1)
+        time.sleep(1)
+        numazar=random.randint(1,7)
+        j1=j1+numazar
+        print(Jugador1, " tiro el dado y salio:", numazar)
+        print(Jugador1, j1)
+        time.sleep(1)
+        if j1>=30:
+            print(Jugador1, " gano")
+            break
       
-#     else:
-#         print("turno de j2")
-#         time.sleep(1)
-#         numazar=random.randint(1,7)
-#         j2=j2+numazar
-#         print("J2 tiro el dado y salio:", numazar)
-#         print("J2", j2)
-#         time.sleep(1)
-#         if j2>=30:
-#             print("j2 gano")
-#             break
+    else:
+        print("turno de:", Jugador2)
+        time.sleep(1)
+        numazar=random.randint(1,7)
+        j2=j2+numazar
+        print(Jugador2, "tiro el dado y salio:", numazar)
+        print(Jugador2, j2)
+        time.sleep(1)
+        if j2>=30:
+            print(Jugador2, " gano")
+            break
 
 ##--------------------------------------------------------
 
