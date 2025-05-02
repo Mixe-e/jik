@@ -160,25 +160,77 @@
 
 import random
 
-numAzar=random.randint(1,50)
-adivinar= int(print("Adivina el numero"))
+# numAzar=random.randint(1,50)
+# adivinar=int(input("Adivina el numero"))
 
-while adivinar!=numAzar:
+# while adivinar!=numAzar:
 
-    if adivinar>numAzar:
-        print("El numero es menor")
-        print(numAzar)
+#     if adivinar>numAzar:
+#         print("El numero es menor")
+#         print(numAzar)
+#         adivinar=int(input("Adivina el numero"))
 
-    if adivinar<numAzar:
-        print("El numero es mayor")
-        print(numAzar)
+#     if adivinar<numAzar:
+#         print("El numero es mayor")
+#         print(numAzar)
+#         adivinar=int(input("Adivina el numero"))
 
-    if adivinar==numAzar:
-        print("Adivinaste")
-        break
-
-
-
-
+#     if adivinar==numAzar:
+#         print("Adivinaste yippie")
+#         break
 
 
+##-----------------------------------------------------------
+## arreglar codigo -
+# import random
+# import time
+
+
+# barril=random.randint(1,6)
+# rul=int(input("Dispara"))
+
+# while barril!=rul:
+
+# print("Salvada")
+# rul=int(input("Dispara"))
+
+#     if barril==rul:
+#         print("Moriste")
+#         break
+
+##------------------------------------------------------------
+# import random
+# import time
+
+# j1=0
+# j2=0
+# meta=30
+# kik=0
+# while meta!=6999:
+#     kik=kik+1
+
+#     if kik % 2 == 0:
+#         print("turno de j1")
+#         time.sleep(1)
+#         numazar=random.randint(1,7)
+#         j1=j1+numazar
+#         print("J1 tiro el dado y salio:", numazar)
+#         print("J1", j1)
+#         time.sleep(1)
+#         if j1>=30:
+#             print("j1 gano")
+#             break
+      
+#     else:
+#         print("turno de j2")
+#         time.sleep(1)
+#         numazar=random.randint(1,7)
+#         j2=j2+numazar
+#         print("J2 tiro el dado y salio:", numazar)
+#         print("J2", j2)
+#         time.sleep(1)
+#         if j2>=30:
+#             print("j2 gano")
+#             break
+
+##--------------------------------------------------------
