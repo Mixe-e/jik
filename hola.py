@@ -234,3 +234,76 @@ import random
 #             break
 
 ##--------------------------------------------------------
+
+arancel=200000
+descuento=0
+
+print("""
+    1. Puente alto
+    2. La florida
+    3. La pintana
+    4. San joaquin
+      """)
+comuna=int(input("Ingrese su comuna"))
+
+
+while comuna!=7:
+
+    if comuna==1:
+        print("descuento aplicado 25%")
+        descuento=descuento+25
+        break
+    if comuna==2:
+        print("descuento aplicado 20%")
+        descuento=descuento+20
+        break
+    if comuna==3:
+        print("descuento aplicado 30%")
+        descuento=descuento+30
+        break
+    if comuna==4:
+        print("descuento aplicado 15%")
+        descuento=descuento+15
+        break
+    else:
+        print("ingrese un numero valido")
+        comuna=int(input("Ingrese su comuna"))
+
+
+print("con cuantas personas vive?")
+print("""
+    1. 1 persona
+    2. De 2 a 4 personas
+    3. 5 personas o más
+      """)
+personas=int(input("ingrese cantidad de personas"))
+
+while personas!=7:
+
+    if personas==1:
+        print("descuento aplicado 2%")
+        descuento=descuento+2
+        break
+    if personas==2:
+        print("descuento aplicado 3%")
+        descuento=descuento+3
+        break
+    if personas==3:
+        print("descuento aplicado 4%")
+        descuento=descuento+4
+        break
+    else:
+        print("ingrese un numero valido")
+        personas=int(input("Ingrese cantidad de personas"))
+
+
+
+print("Su comuna", comuna)
+print("Cantidad de personas", personas)
+print("Descuento aplicado para su arancel%", descuento)
+print("Arancel:", arancel)
+descuentoinicial=arancel*descuento/100
+Darancel=arancel-descuentoinicial
+print("Descuento aplicado al arancel%", descuentoinicial)
+arancel=arancel-Darancel
+print("El total a pagar es:", Darancel)
