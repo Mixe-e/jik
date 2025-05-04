@@ -15,16 +15,33 @@ while tragamonedas != 4:
     print("----------------------------------------")
     tragamonedas=(input("Pulsa cualquier boton para tirar..."))
     if Creditos>=100:  
+        
         Creditos=Creditos-100
-        Slot1=random.randint(1,5)
+        for i in range(lanzando):
+            Slot1=random.randint(1,5)
+            print(Slot1)
+            time.sleep(0.02)
+            os.system('cls' if os.name == 'nt' else 'clear')
+        
+        
+        for i in range(lanzando):
+            Slot2=random.randint(1,5)
+            print(Slot1)
+            print(Slot2)
+            time.sleep(0.02)
+            os.system('cls' if os.name == 'nt' else 'clear')
+        
+        for i in range(lanzando):
+            Slot3=random.randint(1,5)
+            print(Slot1)
+            print(Slot2)
+            print(Slot3)
+            time.sleep(0.008)
+            os.system('cls' if os.name == 'nt' else 'clear')   
+        time.sleep(0.05)
         print(Slot1)
-        time.sleep(0.10)
-        Slot2=random.randint(1,5)
         print(Slot2)
-        time.sleep(0.10)
-        Slot3=random.randint(1,5)
         print(Slot3)
-        time.sleep(0.10)
     if Slot1==Slot2==Slot3:
         print(Fore.GREEN, "3 Iguales | GANASTE!")
         print(Fore.YELLOW, "+1000 Creditos")
