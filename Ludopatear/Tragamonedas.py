@@ -24,7 +24,7 @@ while tragamonedas != 4:
         for i in range(lanzando):
             Slot1=random.randint(1,10)
             print(Slot1)
-            time.sleep(0.010)
+            time.sleep(0.003)
             os.system('cls' if os.name == 'nt' else 'clear')
         
         
@@ -32,7 +32,7 @@ while tragamonedas != 4:
             Slot2=random.randint(1,10)
             print(Slot1)
             print(Slot2)
-            time.sleep(0.010)
+            time.sleep(0.003)
             os.system('cls' if os.name == 'nt' else 'clear')
         
         for i in range(lanzando):
@@ -40,7 +40,7 @@ while tragamonedas != 4:
             print(Slot1)
             print(Slot2)
             print(Slot3)
-            time.sleep(0.018)
+            time.sleep(0.008)
             os.system('cls' if os.name == 'nt' else 'clear')   
         time.sleep(0.05)
         print(Slot1)
