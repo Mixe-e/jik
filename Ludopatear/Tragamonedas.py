@@ -112,8 +112,6 @@ while tragamonedas != 4:
             os.system('cls' if os.name == 'nt' else 'clear')
             break
         elif Menu!="1" or Menu!="2" or Menu!="3" or Menu!="4" or Menu!="5" or Menu!="6" or Menu!="7" or Menu!="8":
-            print("Inserte un numero valido")
-            time.sleep(1)
             os.system('cls' if os.name == 'nt' else 'clear')
 
     if Creditos>=apuesta and tragamonedas=="":
@@ -160,13 +158,7 @@ while tragamonedas != 4:
         print(Fore.YELLOW, "+", apuesta*10, " Creditos")
         Creditos=Creditos+(apuesta*10)
         JIK=JIK+1
-    
-    if tragamonedas==4:
-        print(Fore.LIGHTYELLOW_EX, "Saliendo del programa...")
-    
-    elif Creditos<=0:
-        print(Fore.RED,"No tienes suficientes creditos...")
-    
+        
     if Creditos<=0:
         os.system('cls' if os.name == 'nt' else 'clear')
         print(Fore.CYAN, "FIN DEL JUEGO, TE QUEDASTE SIN CREDITOS")
@@ -178,13 +170,13 @@ while tragamonedas != 4:
 print(Fore.YELLOW, "Veamos tus puntos...")
 
 if GIG>1:
-    print(Fore.YELLOW, "2 Iguales:", GIG)
+    print(Fore.YELLOW, "Veces que sacaste 2 Iguales:", GIG)
 
 if KIK>1:
-    print(Fore.YELLOW, "3 Iguales:", KIK)
+    print(Fore.YELLOW, "Veces que sacast 3 Iguales:", KIK)
 
 if JIK>1:
-    print(Fore.YELLOW, "3 En linea:", JIK)
+    print(Fore.YELLOW, "Veces que sacast 3 En linea:", JIK)
 
 print(Fore.GREEN, "------------------")
 LOP=(GIG * apuesta) + ( JIK * apuesta ) + (KIK*apuesta) 
