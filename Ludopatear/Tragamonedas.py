@@ -10,65 +10,111 @@ tragamonedas="unboton"
 GIG=0
 KIK=0
 JIK=0
-apuesta=0
+Menu=0
+Slot1=0
+Slot2=0
+Slot3=0
+apuesta=100
 
 nombre=(input("Ingresa tu nombre de inversor/a experto"))
 
 while tragamonedas != 4:
     print("Tus creditos:",Fore.YELLOW, Creditos)
-    print("Si quieres aumentar/bajar la apuesta escribe: 1")
+    print("Tu apuesta:", Fore.CYAN, apuesta)
+    print(Fore.YELLOW, "Si quieres aumentar/bajar la apuesta escribe: 1")
     print("----------------------------------------")
     tragamonedas=(input("Pulsa cualquier boton para tirar..."))
 
-    while tragamonedas==1:
+    while tragamonedas=="1":
         print(Fore.YELLOW, "Ajusta tu apuesta")
-        apuesta=(input(Fore.YELLOW, """
-              1. 100 Creditos
-              2. 200 Creditos
-              3. 500 Creditos
-              4. 1000 Creditos
-              5. 2000 Creditos
-              6. 5000 Creditos
-              """))
-        if apuesta==1:
-            if Creditos>= 100:
+        print(Fore.YELLOW, "1. 50 Creditos")        
+        print(Fore.YELLOW, "2. 100 Creditos")
+        print(Fore.YELLOW, "3. 200 Creditos")    
+        print(Fore.YELLOW, "4. 500 Creditos")
+        print(Fore.YELLOW, "5. 1000 Creditos")        
+        print(Fore.YELLOW, "6. 2000 Creditos")    
+        print(Fore.YELLOW, "7. 5000 Creditos")  
+        print(Fore.YELLOW, "8. Salir")
+        Menu=(input())
+        if Menu=="1":
+            if Creditos>=50:
+                print(Fore.CYAN, "Apuesta ajustada a 50 Creditos")
+                apuesta=50
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')
+            elif Creditos<50:
+                print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')                        
+        if Menu=="2":
+            if Creditos>=100:
                 print(Fore.CYAN, "Apuesta ajustada a 100 Creditos")
                 apuesta=100
-        else:
-            print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
-        if apuesta==2:
-            if Creditos>= 200:
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')
+            elif Creditos<100:
+                print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')
+        if Menu=="3":
+            if Creditos>=200:
                 print(Fore.CYAN, "Apuesta ajustada a 200 Creditos")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')
                 apuesta=200
-        else:
-            print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
-        if apuesta==3:
-            if Creditos>= 500:
+            elif Creditos<200:
+                print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')                
+        if Menu=="4":
+            if Creditos>=500:
                 print(Fore.CYAN, "Apuesta ajustada a 500 Creditos")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')                
                 apuesta=500
-        else:
-            print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
-        if apuesta==4:
-            if Creditos>= 1000:
+            elif Creditos<500:
+                print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')
+        if Menu=="5":
+            if Creditos>=1000:
                 print(Fore.CYAN, "Apuesta ajustada a 1000 Creditos")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')                
                 apuesta=1000
-        else:
-            print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
-        if apuesta==5:
-            if Creditos>= 2000:
+            elif Creditos<1000:
+                print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')
+        if Menu=="6":
+            if Creditos>=2000:
                 print(Fore.CYAN, "Apuesta ajustada a 2000 Creditos")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')                
                 apuesta=2000
-        else:
-            print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
-        if apuesta==6:
-            if Creditos>= 5000:
+            elif Creditos<2000:
+                print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')
+        if Menu=="7":
+            if Creditos>=5000:
                 print(Fore.CYAN, "Apuesta ajustada a 5000 Creditos")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')                
                 apuesta=5000
-        else:
-            print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
-
-
-
+            elif Creditos<5000:
+                print(Fore.RED, "No tienes suficientes creditos para realizar esta apuesta")
+                time.sleep(0.5)
+                os.system('cls' if os.name == 'nt' else 'clear')
+        if Menu=="8":
+            print(Fore.YELLOW, "Regresando al menu...")
+            time.sleep(1)
+            os.system('cls' if os.name == 'nt' else 'clear')
+            break
+        elif Menu!="1" or Menu!="2" or Menu!="3" or Menu!="4" or Menu!="5" or Menu!="6" or Menu!="7" or Menu!="8":
+            print("Inserte un numero valido")
+            time.sleep(1)
+            os.system('cls' if os.name == 'nt' else 'clear')
 
     if Creditos>=apuesta and tragamonedas=="":
         
@@ -82,22 +128,23 @@ while tragamonedas != 4:
         
         for i in range(lanzando):
             Slot2=random.randint(1,10)
-            print(Slot1)
-            print(Slot2)
+            print(Slot1,
+                  Slot2)
             time.sleep(0.003)
             os.system('cls' if os.name == 'nt' else 'clear')
         
         for i in range(lanzando):
             Slot3=random.randint(1,10)
-            print(Slot1)
-            print(Slot2)
-            print(Slot3)
+            print(Slot1,
+                  Slot2,
+                  Slot3)
             time.sleep(0.008)
             os.system('cls' if os.name == 'nt' else 'clear')   
         time.sleep(0.05)
-        print(Slot1)
-        print(Slot2)
-        print(Slot3)
+        print(Slot1,
+              Slot2,
+              Slot3
+              )
     if Slot1==Slot2==Slot3:
         print(Fore.GREEN, "3 Iguales | GANASTE!")
         print(Fore.YELLOW, "+", apuesta*5, " Creditos")
@@ -120,9 +167,11 @@ while tragamonedas != 4:
     elif Creditos<=0:
         print(Fore.RED,"No tienes suficientes creditos...")
     
-    if Creditos<=100:
+    if Creditos<=0:
+        os.system('cls' if os.name == 'nt' else 'clear')
         print(Fore.CYAN, "FIN DEL JUEGO, TE QUEDASTE SIN CREDITOS")
         time.sleep(1)
+        os.system('cls' if os.name == 'nt' else 'clear')
         break
 
 
