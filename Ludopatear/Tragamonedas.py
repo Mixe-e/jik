@@ -35,6 +35,8 @@ while tragamonedas != 4:
         print(Fore.YELLOW, "6. 2000 Creditos")    
         print(Fore.YELLOW, "7. 5000 Creditos")  
         print(Fore.YELLOW, "8. Salir")
+        print(Fore.CYAN, "-------------------------")
+        print(Fore.CYAN, "Tus creditos:", Creditos)
         Menu=(input())
         if Menu=="1":
             if Creditos>=50:
@@ -120,7 +122,7 @@ while tragamonedas != 4:
         for i in range(lanzando):
             Slot1=random.randint(1,10)
             print(Slot1)
-            time.sleep(0.003)
+            time.sleep(0.03)
             os.system('cls' if os.name == 'nt' else 'clear')
         
         
@@ -128,7 +130,7 @@ while tragamonedas != 4:
             Slot2=random.randint(1,10)
             print(Slot1,
                   Slot2)
-            time.sleep(0.003)
+            time.sleep(0.03)
             os.system('cls' if os.name == 'nt' else 'clear')
         
         for i in range(lanzando):
@@ -136,7 +138,7 @@ while tragamonedas != 4:
             print(Slot1,
                   Slot2,
                   Slot3)
-            time.sleep(0.008)
+            time.sleep(0.08)
             os.system('cls' if os.name == 'nt' else 'clear')   
         time.sleep(0.05)
         print(Slot1,
@@ -148,17 +150,19 @@ while tragamonedas != 4:
         print(Fore.YELLOW, "+", apuesta*5, " Creditos")
         Creditos=Creditos+(apuesta*5)
         KIK=KIK+1
-    if Slot1==Slot2 or Slot2==Slot3 or Slot1==Slot3:
+    elif Slot1==Slot2 or Slot2==Slot3 or Slot1==Slot3:
         print(Fore.GREEN, "2 Iguales | GANASTE!")
         print(Fore.YELLOW, "+", apuesta/2, " Creditos")
         Creditos=Creditos+(apuesta/2)
         GIG=GIG+1
-    if Slot1==1 and Slot2==2 and Slot3==3 or Slot1==4 and Slot2==5 and Slot3==6 or Slot1==7 and Slot2==8 and Slot3==9:
+    elif Slot1==1 and Slot2==2 and Slot3==3 or Slot1==4 and Slot2==5 and Slot3==6 or Slot1==7 and Slot2==8 and Slot3==9:
         print(Fore.GREEN, "3 en linea | GANASTE!")
         print(Fore.YELLOW, "+", apuesta*10, " Creditos")
         Creditos=Creditos+(apuesta*10)
         JIK=JIK+1
-        
+    else:
+        print(Fore.RED, "PERDISTE")
+
     if Creditos<=0:
         os.system('cls' if os.name == 'nt' else 'clear')
         print(Fore.CYAN, "FIN DEL JUEGO, TE QUEDASTE SIN CREDITOS")
