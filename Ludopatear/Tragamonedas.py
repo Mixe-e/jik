@@ -172,16 +172,16 @@ while tragamonedas != 4:
 
 
 print(Fore.YELLOW, "Veamos tus puntos...")
-
+time.sleep(1)
 if GIG>1:
     print(Fore.YELLOW, "Veces que sacaste 2 Iguales:", GIG)
-
+    time.sleep(1)
 if KIK>1:
     print(Fore.YELLOW, "Veces que sacast 3 Iguales:", KIK)
-
+    time.sleep(1)
 if JIK>1:
     print(Fore.YELLOW, "Veces que sacast 3 En linea:", JIK)
-
+    time.sleep(1)
 print(Fore.GREEN, "------------------")
 LOP=(GIG * apuesta) + ( JIK * apuesta ) + (KIK*apuesta) 
 print(Fore.YELLOW, "Tus puntos:", LOP)
