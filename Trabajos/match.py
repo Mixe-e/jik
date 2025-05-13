@@ -52,10 +52,23 @@ def calcu():
 calcu()
 
 
-
-
 # finally
 # # Codigo a ejecutar siempre
+
+
+
+## Menu recursivo, debe tener 3 programas creados anteriormente
+## el menu debe llamar a estos programas y ejecutarlos de manera correcta
+## debe tener la opcion salir
+## y una opcion por defecto
+
+def rojo():
+    
+
+def negro():
+    
+
+def verde():
 
 
 
