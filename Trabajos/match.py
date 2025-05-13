@@ -15,10 +15,12 @@ def multiplicacion():
     n2=int(input("ingrese un numero: "))
     print("El resultado de la multiplicacion es", n1*n2)
 def division():
-    n1=int(input("ingrese un numero: "))
-    n2=int(input("ingrese un numero: "))
-    print("El resultado de la division es", n1/n2)
-
+    try:
+        n1=int(input("ingrese un numero: "))
+        n2=int(input("ingrese un numero: "))
+        print("El resultado de la division es", n1/n2)
+    except ZeroDivisionError as nombre_de_excepcion:
+        print("Se produjo una excepcion", nombre_de_excepcion)
 def calcu():
 
     while True:
@@ -48,6 +50,24 @@ def calcu():
                 print(Fore.RED,"Opcion invalida")
 
 calcu()
+
+
+
+
+# finally
+# # Codigo a ejecutar siempre
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
