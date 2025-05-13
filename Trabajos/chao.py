@@ -147,21 +147,21 @@ import os
 ##------------------------------------------------------
 
 
-digito1=(int(input("Digito 1: Escriba un numero")))
+# digito1=(int(input("Digito 1: Escriba un numero")))
 
-digito2=(int(input("Digito 2: Escriba un numero")))
+# digito2=(int(input("Digito 2: Escriba un numero")))
 
-while digito2<digito1:
-    print(Fore.RED, "El ultimo digito es menor al 1, porfavor insertar un numero mayor al digito 1")
-    print(Fore.CYAN, "-------------------------------------------------------")
-    digito2=(int(input(Fore.CYAN, "Digito 2: Escriba un nuevo digito")))
+# while digito2<digito1:
+#     print(Fore.RED, "El ultimo digito es menor al 1, porfavor insertar un numero mayor al digito 1")
+#     print(Fore.CYAN, "-------------------------------------------------------")
+#     digito2=(int(input(Fore.CYAN, "Digito 2: Escriba un nuevo digito")))
 
-digito3=random.randint(digito1,digito2)
+# digito3=random.randint(digito1,digito2)
 
-for i in range(digito3):
-    print(Fore.YELLOW, "▄")
+# for i in range(digito3):
+#     print(Fore.YELLOW, "▄")
 
 
-print(Fore.CYAN, "-------------------------------------------------------")
-print(Fore.CYAN, "Se imprimio el ▄", digito3, "veces")
+# print(Fore.CYAN, "-------------------------------------------------------")
+# print(Fore.CYAN, "Se imprimio el ▄", digito3, "veces")
 
