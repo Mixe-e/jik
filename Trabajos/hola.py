@@ -346,54 +346,81 @@ import random
 
 ##-----------------------------------------------------------
 
-print("Bienvenido al supermercado")
-kik="tilinsin"
-categorias=(int(input("Seleccione categoria")))
+# print("Bienvenido al supermercado")
+# kik="tilinsin"
+# categorias=(int(input("Seleccione categoria")))
 
-while categorias!=kik:
-    print("""
-        1. Energeticas  
-        2. Gatitos 
-        3. Galletas          
-          """)
+# while categorias!=kik:
+#     print("""
+#         1. Energeticas  
+#         2. Gatitos 
+#         3. Galletas          
+#           """)
 
-    if categorias==1:
+#     if categorias==1:
     
-        print("Seleccione producto")
-        print("""     
-            1. Energetica morada
-            2. Energetica azul   
-            """)
-        energetica=(int(input))
-        if energetica==1:
-            energeticamorada=energeticamorada+1
-        if energetica==2:
-            energeticaazul=energeticaazul+1
+#         print("Seleccione producto")
+#         print("""     
+#             1. Energetica morada
+#             2. Energetica azul   
+#             """)
+#         energetica=(int(input))
+#         if energetica==1:
+#             energeticamorada=energeticamorada+1
+#         if energetica==2:
+#             energeticaazul=energeticaazul+1
 
-    if categorias==2:
-        print("Seleccione producto")
-        print("""     
-            1. Gatito azul
-            2. Gatito naranja   
-            """)
-        gatito=(int(input))
-        if gatito==1:
-            gatitoazul=gatitoazul+1
-        if gatito==2:
-            gatitonaranja=gatitonaranja+1
+#     if categorias==2:
+#         print("Seleccione producto")
+#         print("""     
+#             1. Gatito azul
+#             2. Gatito naranja   
+#             """)
+#         gatito=(int(input))
+#         if gatito==1:
+#             gatitoazul=gatitoazul+1
+#         if gatito==2:
+#             gatitonaranja=gatitonaranja+1
 
-    if categorias==3:
-        print("Seleccione producto")
-        print("""     
-            1. Serranita
-            2. carioca   
-            """)
-        galleta=(int(input))
-        if galleta==1:
-            serranita=serranita+1
-        if galleta==2:
-            carioca=carioca+1
+#     if categorias==3:
+#         print("Seleccione producto")
+#         print("""     
+#             1. Serranita
+#             2. carioca   
+#             """)
+#         galleta=(int(input))
+#         if galleta==1:
+#             serranita=serranita+1
+#         if galleta==2:
+#             carioca=carioca+1
 
        
+##-------------------------------------------------------------------------
+
+total=0
+alumnos=int(input("Ingrese cantidad de alumnos " ))
+for i in range(1, alumnos + 1):
+    print("Ingrese cantidad de notas del alumno ", i)
+    notas=int(input())
+    for j in range(1, notas + 1):
+        print("Alumno ", i)
+        print("Nota ", j)
+        noxta=int(input("Ingrese nota "))
+        total=total+noxta
+    total=total/notas
+    print("El alumno", i ," tiene de promedio:", total)
+
+    if total>4.0:
+        print("El alumno aprobo!")
+        print("------------------")
+        total=0
+    else:
+        print("El alumno reprobo")
+        print("------------------")
+        total=0
+
+
+
+
 
 

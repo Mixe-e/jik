@@ -57,8 +57,7 @@ def supermercado():
                         print("Opción no válida")
             except Exception:
                 print("Solo numeros no texto")
-
-
+                
 supermercado()
 
 print("Paltas:", pa)
@@ -68,5 +67,3 @@ print("Pera", pe)
 print("Ak-47", ak)
 if nombresaso==True:
     print("Gracias por su compra", name)
-
-
