@@ -62,13 +62,6 @@ calcu()
 ## debe tener la opcion salir
 ## y una opcion por defecto
 
-def rojo():
-    
-
-def negro():
-    
-
-def verde():
 
 
 
