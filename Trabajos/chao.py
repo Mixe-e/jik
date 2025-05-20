@@ -211,7 +211,6 @@ def valores():
     basicop=0
     standardp=0
 valores()
-
 def fulll():
     global full, fullp, autos
     full=full+1
@@ -238,7 +237,15 @@ def finalizacion():
     print("Full $", fullp)
     print("Standard $", standardp)
     print("Básico $", basicop)
-
+    print("Total $", fullp+standardp+basicop)
+    print("----------------------")
+    if fullp>standardp and fullp>basicop:
+        print("El monto mas alto fue", fullp, "del servicio full")
+    elif standardp>fullp and standardp>basicop:   
+        print("El monto mas alto fue", standardp, "del servicio standard")
+    elif basicop>fullp and basicop>standardp:
+        print("El monto mas alto fue", basicop, "del servicio básico")
+            
 while True:
     print("""Lavado de autos
           -----------------------
