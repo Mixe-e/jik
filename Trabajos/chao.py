@@ -165,3 +165,129 @@ import os
 # print(Fore.CYAN, "-------------------------------------------------------")
 # print(Fore.CYAN, "Se imprimio el ▄", digito3, "veces")
 
+##---------------------------------------
+
+# def valores():
+#     global conejos, per, pero
+#     conejos=2
+#     per=0
+#     pero=0
+# valores()
+
+# while True:
+#     try:
+#         perros=int(input("Cuantos perros de caza son? "))
+#         print("Cuota minima de conejos:", conejos)
+#         for i in range(perros):
+#             i=i+1
+#             print("Perro:", i)
+#             cuota=random.randint(0,6)
+#             time.sleep(1)
+#             if cuota>conejos:
+#                 print("El perro", i ,"Cumplio la cuota: ", cuota)
+#                 per=per+1
+#             else:
+#                 print("El perro", i ,"se quedo sin filete por no cumplir la cuota: ", cuota)
+#                 pero=pero+1
+#         print("------------------------------------")
+#         print("Resumen...")
+#         time.sleep(1)
+#         print(Fore.YELLOW, "Perros que cumplieron la cuota: ", per)
+#         print(Fore.CYAN, "Perros que no cumplieron la cuota: ", pero)
+#     except Exception:
+#         print("Solo numeros enteros")
+
+
+##------------------------------------------------
+def valores():
+    global autos, op, oplavado, standard, full,basico, fullp, basicop, standardp
+    fullp=0
+    basico=0
+    full=0
+    op=0
+    oplavado=0
+    autos=0
+    standard=0
+    basicop=0
+    standardp=0
+valores()
+
+def fulll():
+    global full, fullp, autos
+    full=full+1
+    fullp=fullp+15000
+    autos=autos+1
+def standardd():
+    global standard, standardp, autos
+    standard=standard+1
+    standardp=standardp+10000
+    autos=autos+1
+def basicoo():
+    global basico, basicop, autos
+    basico=basico+1
+    basicop=basicop+7000
+    autos=autos+1
+def finalizacion():
+    global autos, full, standard, basico, fullp, standardp, basicop
+    print("Autos que ingresaron:", autos)
+    print("-----------------------------")
+    print("Autos que usaron el lavado full: ",full)
+    print("Autos que usaron el lavado Standard: ",standard)
+    print("Autos que usaron el lavado Básico: ",basico)
+    print("--------------------------------")
+    print("Full $", fullp)
+    print("Standard $", standardp)
+    print("Básico $", basicop)
+
+while True:
+    print("""Lavado de autos
+          -----------------------
+          1. Pago del lavado
+          2. Ver ventas diarias
+          3. Salir
+          """)
+    op=int(input())
+    match op:
+        case 1:
+            print("""Elija su nivel de lavado
+                  1. Full | $15.000
+                  2. Standard | $10.000
+                  3. Básico | $7.000
+                  4. Salir
+                  """)
+            oplavado=int(input())
+            match oplavado:
+                case 1:
+                    print("Lavado a full, espere un momento...")
+                    time.sleep(3)
+                    fulll()
+                case 2:
+                    print("Lavado Standard, espere un momento...")
+                    time.sleep(3)
+                    standardd()
+                case 3:
+                    print("Lavado Básico, espere un momento...")
+                    time.sleep(3)
+                    basicoo()
+                case 4:
+                    print("Saliendo....")
+                    time.sleep(1)
+                case _:
+                    print("Seleccione un numero valido")
+        case 2:
+            finalizacion()
+        case 3:
+            print("Saliendo del sistema...")
+            time.sleep(1)
+            break
+                
+        case _:
+            print("Seleccione un numero valido")
+
+
+
+
+
+
+
+

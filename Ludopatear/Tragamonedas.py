@@ -4,17 +4,21 @@ import os
 import time
 
 from colorama import init, Fore, Back, Style
-lanzando=8
-Creditos=1000
-tragamonedas="unboton"
-GIG=0
-KIK=0
-JIK=0
-Menu=0
-Slot1=0
-Slot2=0
-Slot3=0
-apuesta=100
+def maquina():
+    global lanzando, Creditos, tragamonedas, GIG, KIK, JIK, Menu, Slot1, Slot2, Slot3, apuesta
+    lanzando=8
+    Creditos=1000
+    tragamonedas="unboton"
+    GIG=0
+    KIK=0
+    JIK=0
+    Menu=0
+    Slot1=0
+    Slot2=0
+    Slot3=0
+    apuesta=100
+maquina()
+
 
 nombre=(input("Ingresa tu nombre de inversor/a experto"))
 
