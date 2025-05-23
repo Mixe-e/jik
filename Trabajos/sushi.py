@@ -47,6 +47,7 @@ def des():
                             1. Si
                             2. No
                             """))
+        
     except Exception:
         print("Solo numeros, no letras")
 
@@ -130,3 +131,12 @@ if Desc == 1:
 
 
 boleta()
+
+
+
+
+
+
+
+
+
