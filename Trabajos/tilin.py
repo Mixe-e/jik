@@ -68,7 +68,8 @@ def usuarioo1():
     sesion1=True
     if Pasar1==True:
         while sesion1==True:
-            kik=int(input("""Bienvenido
+            print("Bienvenido,", usuario1)
+            kik=int(input("""
                     ---------------------------
                         1.Realizar llamada
                         2.Enviar correo
@@ -85,7 +86,10 @@ def usuarioo1():
                         borrar()
                 case 2:
                     correo=input("Envia tu correo")
-
+                    if str(correo).count('@'):
+                        print(Fore.YELLOW, "Enviando correo...")
+                        time.sleep(1)
+                        print(Fore.WHITE, "Correo enviado")
                 case 3:
                     print("Cerrando sesion...")
                     time.sleep(1)
@@ -93,6 +97,75 @@ def usuarioo1():
                     sesion1=False
                 case _:
                     print()
+def usuarioo2():
+    global kik, llamada, correo, sesion2
+    sesion2=True
+    if Pasar2==True:
+        while sesion2==True:
+            print("Bienvenido,", usuario2)
+            kik=int(input("""
+                    ---------------------------
+                        1.Realizar llamada
+                        2.Enviar correo
+                        3.Cerrar sesion
+                        """))
+            borrar()
+            match kik:
+                case 1:
+                    llamada=input("Realiza una llamada aqui")
+                    if str(llamada).startswith('9') and len(str(llamada))==9:
+                        print(Fore.YELLOW,"Llamando....")
+                        time.sleep(1)
+                        print(Fore.WHITE, "Llamada exitosa")
+                        borrar()
+                case 2:
+                    correo=input("Envia tu correo")
+                    if str(correo).count('@'):
+                        print(Fore.YELLOW, "Enviando correo...")
+                        time.sleep(1)
+                        print(Fore.WHITE, "Correo enviado")
+                case 3:
+                    print("Cerrando sesion...")
+                    time.sleep(1)
+                    borrar()
+                    sesion2=False
+                case _:
+                    print()
+def usuarioo3():
+    global kik, llamada, correo
+    sesion3=True
+    if Pasar3==True:
+        while sesion3==True:
+            print("Bienvenido,", usuario3)
+            kik=int(input("""
+                    ---------------------------
+                        1.Realizar llamada
+                        2.Enviar correo
+                        3.Cerrar sesion
+                        """))
+            borrar()
+            match kik:
+                case 1:
+                    llamada=input("Realiza una llamada aqui")
+                    if str(llamada).startswith('9') and len(str(llamada))==9:
+                        print(Fore.YELLOW,"Llamando....")
+                        time.sleep(1)
+                        print(Fore.WHITE, "Llamada exitosa")
+                        borrar()
+                case 2:
+                    correo=input("Envia tu correo")
+                    if str(correo).count('@'):
+                        print(Fore.YELLOW, "Enviando correo...")
+                        time.sleep(1)
+                        print(Fore.WHITE, "Correo enviado")
+                case 3:
+                    print("Cerrando sesion...")
+                    time.sleep(1)
+                    borrar()
+                    sesion3=False
+                case _:
+                    print()
+
 users()
 
 while Salir==True:
@@ -112,6 +185,8 @@ while Salir==True:
             cspass=input("Ingrese su contraseña ")
             ingreso()
             usuarioo1()
+            usuarioo2()
+            usuarioo3()
         case 2:
             borrar()
             print("""Registrate como usuario
