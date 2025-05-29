@@ -17,8 +17,25 @@ def apuestas():
     total=0
 def crupier():
     global Cartacrupier1, Cartacrupier2, totalcrupier
-    Cartacrupier1=random.randint(1,2,3,4,5,6,7,8,9,10,J,Q,K,A)
-    Cartacrupier2=random.randint(1,2,3,4,5,6,7,8,9,10,J,Q,K,A)
+    totalcrupier=0
+    Cartacrupier1=random.randint(1,13)
+    if Cartacrupier1== 11:
+        Cartacrupier1=J
+    elif Cartacrupier1 == 12:
+        Cartacrupier1=Q
+    elif Cartacrupier1 == 13:
+        Cartacrupier1=K
+    elif Cartacrupier1 == 1:
+        Cartacrupier1=A
+    Cartacrupier2=random.randint(1,13)
+    if Cartacrupier2== 11:
+        Cartacrupier2=J
+    elif Cartacrupier2 == 12:
+        Cartacrupier2=Q
+    elif Cartacrupier2 == 13:
+        Cartacrupier2=K
+    elif Cartacrupier2 == 1:
+        Cartacrupier2=A    
     totalcrupier=totalcrupier+Cartacrupier1+Cartacrupier2
 
 
@@ -62,15 +79,18 @@ while True:
                 print("-------------------------")
                 print(Fore.YELLOW, "Tus cartas")
                 print(Fore.WHITE, Carta1, Carta2)
-                print("""Otra mas?
+                while True:
+                    op2=int(input("""Otra mas?
                     1. Si
                     2. Pasar
-                    """)
-                if total>21 or totalcrupier>total:
-                    print("Perdiste")
-                else:
-                    print("Ganaste")
-                    Credito=Credito+apuesta
+                    """))
+                    match op2:
+                        print()
+                    if total>21 or totalcrupier>total:
+                        print("Perdiste")
+                    else:
+                        print("Ganaste")
+                        Credito=Credito+apuesta
             else:
                 print(Fore.RED, "NO TIENES CREDITOS SUFICIENTES PARA JUGAR")
                     
