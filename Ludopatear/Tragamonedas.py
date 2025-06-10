@@ -198,4 +198,9 @@ if LOP>10000:
 else:
     print(Fore.YELLOW, "Tabla de posiciones")
     print(Fore.MAGENTA, "1. Mixin : 10000 puntos")
-    print(Fore.CYAN, "2.", nombre, ":",  LOP, "puntos")   
+    print(Fore.CYAN, "2.", nombre, ":",  LOP, "puntos")
+
+
+
+
+
