@@ -100,10 +100,10 @@ while True:
             precio.append(precios)
         case 2:
             print("Que vas a comprar?")
-            for i in productos:
+            c=0
+            for prodddddd in productos:
+                print(productos[c], "$",precio[c])
                 c=c+1
-                print(i, productos[c], "$",precio[c])
-        
         case 3:
             print("Imprimiendo boleta")
 
