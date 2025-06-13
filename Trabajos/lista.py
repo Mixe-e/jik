@@ -122,82 +122,83 @@ import os
 
 ##-------------------------
 
+## notas
 
-notas=[7.0,4.6,4.9,7.0,5.6]
+# notas=[7.0,4.6,4.9,7.0,5.6]
 
-op=0
-j=5
-while True:
-    op=int(input("""
-        1.- Ingresar notas
-        2.- Borrar nota
-        3.- Mostrar notas
-        4.- Sacar promedio, nota mayor y nota menor
-        5.- Limpiar todas las notas
-        6.- Salir
-        """))
-    match op:
-        case 1:
-            try:
-                n=float(input("Ingresa tu nota: "))
-                notas.append(n)
-                print("Nota ingresada")
-                time.sleep(1)
-                j=j+1
-            except Exception:
-                print("Solo numeros, no letras")
-        case 2:
-            for i, nota in enumerate(notas):
-                print(i+1,".-",nota)
-            try:
-                borrar=int(input("Seleccione la nota a borrar: "))
-                notas.pop(borrar-1)
-            except Exception:
-                print("Solo numeros, no letras")
-        case 3:
-            print(notas)
-        case 4:
-            print("Sacando promedio...")
-            time.sleep(1)
-            promedio=notas/j
-            print("Promedio:", promedio)
-            time.sleep(1)       
-        case 5:
-            try:
-                decision=int(input("""Esta seguro de querer borrar todas las notas ingresadas?
-                    1. Si
-                    2. No
-                    """))
-                if decision==1:
-                    notas.clear
-                    print("Borrando notas...")
-                    time.sleep(2)
-                    print("Notas borradas exitosamente")
-            except Exception:
-                print("Solo numeros, no letras")
-            else:
-                print("Operacion abortada")
-        case 6:
-            break
-        case _:
-            print("ingrese una opcion valida")
-
-
-
-
-
-
-
+# op=0
+# j=5
+# while True:
+#     op=int(input("""
+#         1.- Ingresar notas
+#         2.- Borrar nota
+#         3.- Mostrar notas
+#         4.- Sacar promedio, nota mayor y nota menor
+#         5.- Limpiar todas las notas
+#         6.- Salir
+#         """))
+#     match op:
+#         case 1:
+#             try:
+#                 n=float(input("Ingresa tu nota: "))
+#                 notas.append(n)
+#                 print("Nota ingresada")
+#                 time.sleep(1)
+#                 j=j+1
+#             except Exception:
+#                 print("Solo numeros, no letras")
+#         case 2:
+#             for i, nota in enumerate(notas):
+#                 print(i+1,".-",nota)
+#             try:
+#                 borrar=int(input("Seleccione la nota a borrar: "))
+#                 notas.pop(borrar-1)
+#             except Exception:
+#                 print("Solo numeros, no letras")
+#         case 3:
+#             print(notas)
+#         case 4:
+#             print("Sacando promedio...")
+#             time.sleep(1)
+#             suma= sum(notas)
+#             totalnotas = len(notas)
+#             promedio= suma /totalnotas
+#             print("Promedio:", promedio)
+#             time.sleep(1)
+#             print("La nota mayor es:", notas[-1])
+#             print("La nota menor es:", notas[0])
+#         case 5:
+#             try:
+#                 decision=int(input("""Esta seguro de querer borrar todas las notas ingresadas?
+#                     1. Si
+#                     2. No
+#                     """))
+#                 if decision==1:
+#                     notas.clear()
+#                     print("Borrando notas...")
+#                     time.sleep(2)
+#                     print("Notas borradas exitosamente")
+#             except Exception:
+#                 print("Solo numeros, no letras")
+#             else:
+#                 print("Operacion abortada")
+#         case 6:
+#             break
+#         case _:
+#             print("ingrese una opcion valida")
 
 
 
+##---------------------------------------------------
 
 
 
+vero=[
+                [3,4]
+                [8,9,64,8]
+                    ]
 
-
-
-
+print(vero [1][2])
 
 
 
