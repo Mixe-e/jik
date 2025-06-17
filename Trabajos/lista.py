@@ -273,6 +273,15 @@ import random
 precio=[]
 productos=[]
 
+def show():
+    global i, prod
+    c=0
+    for i, prod in enumerate(productos):
+        print(productos[c], precio[c])
+        c=c+1
+
+
+
 
 while True:
     decision=int(input("""
@@ -309,21 +318,8 @@ while True:
             articulo=input("Agrega un articulo")
             precios=int(input("Agregale un precio"))
         case 4:
-            c=0
-            for i, prod in enumerate(productos):
-                print(productos[c], precio[c])
-                c=c+1
+            show()
         case 5:
             break
         case _:
             print("Opcion invalida")
-
-
-
-
-
-
-
-
-
-
