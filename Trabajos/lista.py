@@ -2,7 +2,7 @@ import time
 import colorama
 from colorama import Fore
 import os
-
+import random
 
 
 #     -5-4-3 -2 -1
@@ -193,163 +193,130 @@ import os
 
 
 
-vero=[
-                [3,4]
-                [8,9,64,8]
-                    ]
+# vero=[
+#                 [3,4]
+#                 [8,9,64,8]
+#                     ]
 
-print(vero [1][2])
+# print(vero [1][2])
 
+####----------------------------------------------- 
 
 
+# def ruleta():
+#     barril=random.randint(1,6)
+#     rul=int(input("Dispara"))
 
+#     while rul!=barril:
+#         rul=int(input("Dispara"))
+#     print("BANG!!")
 
+# def suma_ret():
+#     n1=int(input("Ingrese un numero: "))
+#     n2=int(input("Ingrese otro numero: "))
+#     print(n1+n2)
 
 
 
 
+# def suma():
+#     n1=int(input("Ingrese un numero: "))
+#     n2=int(input("Ingrese otro numero: "))
+#     return n1+n2
 
 
+# def suma_arg(n1,n2):
+#     print(n1+n2)
 
 
 
+# suma()
+# num=suma_ret()
+# print(num*5)
 
+# num1=int(input("Ingrese un numero: "))
+# num2=int(input("Ingrese otro numero: "))
+# suma_arg(num1, num2)
+# print("El numero es,", suma_arg , (num1,num2)*2)
 
 
 
 
+# def numero():
+#     n=int(input("Ingrese un numero"))
+#     return n*0.19
 
+# def desc(precio, porc):
+#     return precio*(porc/100)
 
 
+##------------------------------------------
 
 
+# productos=[
 
+#     {"nombre":"lapiz", "precio": 400},
+#     {"nombre":"goma", "precio": 300},
+#     {"nombre":"estuche", "precio": 1600}
+# ]
 
 
+# print(productos[2]["nombre"])
 
 
+# for item in productos:
+#     print(f"El articulo, " {item["nombre"]} "tiene un precio de" {item} "p")
 
 
 
+##-----------------------
+precio=[]
+productos=[]
 
 
+while True:
+    decision=int(input("""
+                    1. Agregar articulo
+                    2. Borrar articulo
+                    3. Actualizar articulo
+                    4. Mostrar listado de articulos
+                    5. Salir
+            """))
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    match decision:
+        case 1:
+            articulo=input("Agrega un articulo")
+            productos.append(articulo)
+            precios=int(input("Agregale un precio"))
+            precio.append(precios)
+        case 2:
+            c=0
+            for i,prodc in enumerate(productos):
+                print(i,".-", productos[c], precio[c])
+                c=c+1
+            borrar=int(input("Seleccione producto a borrar"))
+            productos.pop(borrar)
+            precio.pop(borrar)
+        case 3:
+            c=0
+            for i in productos:
+                c=c+1
+                print(productos[c], precio[c])
+            articulo=input("Agrega un articulo")
+            precios=int(input("Agregale un precio"))
+        case 4:
+            c=0
+            for i, prod in enumerate(productos):
+                print(productos[c], precio[c])
+                c=c+1
+        case 5:
+            break
+        case _:
+            print("Opcion invalida")
 
 
 
