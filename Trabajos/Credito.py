@@ -7,6 +7,7 @@ def tarjeta():
 
 print("Tarjeta de credito")
 
+
 while True:
     op=int(input("Credito"))
     match op:
@@ -23,3 +24,21 @@ while True:
         case 2:
             print("Compras")
             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
