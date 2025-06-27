@@ -397,26 +397,26 @@ import random
        
 ##-------------------------------------------------------------------------
 
-total=0
-alumnos=int(input("Ingrese cantidad de alumnos " ))
-for i in range(1, alumnos + 1):
-    print("Ingrese cantidad de notas del alumno", i)
-    notas=int(input())
-    for j in range(1, notas + 1):
-        print("Alumno ", i)
-        print("Nota ", j)
-        noxta=int(input("Ingrese nota "))
-        total=total+noxta
-    total=total/notas
-    print("El alumno", i ," tiene de promedio:", total)
-    if total>4.0:
-        print("El alumno aprobo!")
-        print("------------------")
-        total=0
-    else:
-        print("El alumno reprobo")
-        print("------------------")
-        total=0
+# total=0
+# alumnos=int(input("Ingrese cantidad de alumnos " ))
+# for i in range(1, alumnos + 1):
+#     print("Ingrese cantidad de notas del alumno", i)
+#     notas=int(input())
+#     for j in range(1, notas + 1):
+#         print("Alumno ", i)
+#         print("Nota ", j)
+#         noxta=int(input("Ingrese nota "))
+#         total=total+noxta
+#     total=total/notas
+#     print("El alumno", i ," tiene de promedio:", total)
+#     if total>4.0:
+#         print("El alumno aprobo!")
+#         print("------------------")
+#         total=0
+#     else:
+#         print("El alumno reprobo")
+#         print("------------------")
+#         total=0
 
 
 
