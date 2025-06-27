@@ -36,6 +36,7 @@ while True:
             3.Actualizar vehiculo
             4.Borrar vehiculo
             5.Mostrar estadisticas
+            6.Salir
             """))
     match eleccion:
         case 1:
@@ -64,7 +65,11 @@ while True:
                 Parking["Año"].pop(borrar)
                 Parking["Patente"].pop(borrar)
                 Parking["Tipo"].pop(borrar)
+        
         case 5:
+            print()
+        
+        case 6:
             print("Saliendo")
             break
         
