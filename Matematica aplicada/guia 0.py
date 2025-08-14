@@ -13,7 +13,7 @@
 #         print("Coloca solo numeros")    
 
 
-## Ejercicio 2
+# Ejercicio 2
 
 # while True:
 #     try:
@@ -27,4 +27,30 @@
 
 
 ## Ejercicio 3
+
+# while True:
+#     j=0
+#     kik=100
+#     for i in range(kik):
+#         j=j+i
+#         print("Suma de numeros:", j)
+    
+#     break
+
+## Ejercicio 4
+
+# string="contraseña"
+# while True:
+#     kik=(input("Introduzca contraseña "))
+#     if kik==string:
+#         print("Bienvenido al sistema")
+#         break
+#     else:
+#         print("Contraseña incorrecta")
+
+
+
+
+## Ejercicio 7
+
 
